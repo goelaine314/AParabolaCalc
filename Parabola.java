@@ -7,6 +7,7 @@
         displays the A, B, C inputed numbers
         finds the y and x intercepts as well as the vertex of the parabola and
         labels them.
+        Created in Netbeans.
 
 
 
@@ -14,11 +15,20 @@ Reflection:
 
 - What values of input produce a certain, easily testable output?
 
-At first, when testing if my program will actually graph, I used the most familiar parabola out there: y = x^2, with a =1, b=0, and c=0. Then, when working with calculating the x and y intercepts, I used y = 2x^2 - 1, as this parabola has both x and y intercepts. To determine if my vertex function was working, I had to use a function whose intercepts didn’t overlap with the vertex, and that was y = x^2 - x.
+At first, when testing if my program will actually graph, I used the most familiar parabola out there: y = x^2, with a =1, 
+b=0, and c=0. Then, when working with calculating the x and y intercepts, I used y = 2x^2 - 1, as this parabola has both x 
+and y intercepts. To determine if my vertex function was working, I had to use a function whose intercepts didn’t overlap 
+with the vertex, and that was y = x^2 - x.
 
-- Can you determine how efficient your program is in regards to run-time? In particular, how many discrete points do you need to compute in order to make a smooth curve? 
+- Can you determine how efficient your program is in regards to run-time? In particular, how many discrete points do you
+need to compute in order to make a smooth curve? 
 
-Currently, I have my program placing pixels that are an x interval of 0.001 apart. Using the test parabola y = x^2, it seems that the interval can be as large as 0.005 to make a smooth curve. However, I noticed that the individual pixels become more conspicuous the higher up we go up this curve, because the difference in y increases there, meaning there is an overall larger distance between pixels. Thus, with another test curve of y = 5x^2, the pixels become very spread out. Thus, the number of discrete points needed to make a smooth curve depends on the curve in question. Hence, I kept my x interval at 0.001.
+Currently, I have my program placing pixels that are an x interval of 0.001 apart. Using the test parabola y = x^2, it seems
+that the interval can be as large as 0.005 to make a smooth curve. However, I noticed that the individual pixels become more 
+conspicuous the higher up we go up this curve, because the difference in y increases there, meaning there is an overall 
+larger distance between pixels. Thus, with another test curve of y = 5x^2, the pixels become very spread out. Thus, the 
+number of discrete points needed to make a smooth curve depends on the curve in question. Hence, I kept my x interval at 
+0.001.
 
 
 */
